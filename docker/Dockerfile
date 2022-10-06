@@ -11,6 +11,6 @@ RUN npm i --location=global vercel
 ADD run.sh /bin/
 RUN chmod +x /bin/run.sh
 
-USER node
+USER root
 
 CMD ["/bin/run.sh"]

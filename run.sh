@@ -101,6 +101,9 @@ then
 fi
 IFS=$OLDIFS
 
+whoami
+ls -al /drone/src/
+
 printf "\nBuilding Vercel Project for environment %s \n" "${VERCEL_ENV}"
 
 vercel pull -t "${PLUGIN_VERCEL_TOKEN}" --environment="${VERCEL_ENV}"
